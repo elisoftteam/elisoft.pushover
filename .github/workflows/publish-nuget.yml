@@ -22,7 +22,7 @@ jobs:
       run: dotnet build src/Elisoft.Pushover/Elisoft.Pushover.csproj --configuration Release --no-restore
 
     - name: Build Tests
-      run: dotnet build src/Elisoft.Slack.Tests/Elisoft.Slack.Tests.csproj --configuration Release --no-restore
+      run: dotnet build src/Elisoft.Pushover.Tests/Elisoft.Pushover.Tests.csproj --configuration Release --no-restore
 
     - name: Run Tests
       run: dotnet test src/Elisoft.Pushover.Tests/Elisoft.Pushover.Tests.csproj --configuration Release --no-build --verbosity normal
